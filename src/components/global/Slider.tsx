@@ -1,39 +1,41 @@
-import React, { useState, useEffect } from 'react';
-
-interface SliderProps {
+import React, {useState, useEffect} from "react";
+import Slider from "react-slick";
+interface CarouselProps {
   items: string[];
 }
 
-const Slider: React.FC<SliderProps> = ({ items }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [items.length]);
-
+const Carousel: React.FC<CarouselProps> = ({items}) => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="relative w-full h-[788px] overflow-hidden flex items-center justify-center">
-      <div
-        className="absolute w-full h-full flex transition-transform duration-1000 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {items.map((item, index) => (
-          <div key={index} className="w-full flex-shrink-0">
-            <img
-              src={item}
-              alt={`Slide ${index}`}
-              className="w-full h-[788px] object-cover"
-              style={{ maxWidth: '1773px', maxHeight: '788px' }}
-            />
-          </div>
-        ))}
-      </div>
+    <div className="">
+      <Slider {...settings}>
+        <div className="h-[70vh] bg-red-400">
+          <h3>1</h3>
+        </div>
+        <div className="h-[70vh] bg-red-400">
+          <h3>2</h3>
+        </div>
+        <div className="h-[70vh] bg-red-400">
+          <h3>3</h3>
+        </div>
+        <div className="h-[70vh] bg-red-400">
+          <h3>4</h3>
+        </div>
+        <div className="h-[70vh] bg-red-400">
+          <h3>5</h3>
+        </div>
+        <div className="h-[70vh] bg-red-400">
+          <h3>6</h3>
+        </div>
+      </Slider>
     </div>
   );
 };
 
-export default Slider;
+export default Carousel;
