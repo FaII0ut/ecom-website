@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   img,
 }) => {
   return (
-    <div className="h-[388px]">
+    <div className="h-[328px]">
       <div className="h-[80%] mb-[14px] bg-gray-300/40 rounded-lg w-full flex object-cover items-center">
         <img src={img} />
       </div>

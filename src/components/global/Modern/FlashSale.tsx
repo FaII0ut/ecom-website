@@ -11,8 +11,8 @@ const FlashSale: React.FC<FlashSaleProps> = ({}) => {
           Flash Sale
         </p>
 
-        <div className="grid grid-cols-4 gap-7">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
+        <div className="grid grid-cols-5 gap-7">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
             <ProductCard
               key={index}
               title="Zara army bag"

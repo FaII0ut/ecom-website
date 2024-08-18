@@ -23,7 +23,7 @@ const Nav: React.FC<NavProps> = ({}) => {
   ];
 
   return (
-    <div className="">
+    <div className="sticky top-0 z-50 bg-white">
       <div className="container mx-auto h-[96px] flex flex-row items-center justify-between">
         <div className="flex flex-row items-center">
           <div className="w-[95px] mr-6">
