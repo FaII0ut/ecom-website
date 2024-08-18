@@ -8,7 +8,9 @@ const Arrivals: React.FC<ArrivalsProps> = ({}) => {
       <p className="text-heading text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold mb-6">
         New Arrivals
       </p>
-      <div className="grid grid-cols-3 gap-7"></div>
+      <div className="grid grid-cols-3 gap-7">
+        
+      </div>
     </div>
   );
 };
