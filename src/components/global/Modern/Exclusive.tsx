@@ -14,7 +14,7 @@ const Exclusive: React.FC<ExclusiveProps> = ({}) => {
             20
           </p>
           <img
-            className="p-12 pb-0 absolute w-full h-full group-hover:scale-110 transition-all duration-300"
+            className="p-16 pb-0 absolute w-full h-full group-hover:scale-110 transition-all duration-300"
             src="https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fexclusive%2Fwomen.png&w=640&q=75"
           />
         </div>
@@ -26,7 +26,7 @@ const Exclusive: React.FC<ExclusiveProps> = ({}) => {
             24
           </p>
           <img
-            className="p-12 pb-0 absolute w-full h-full group-hover:scale-110 transition-all duration-300"
+            className="p-16 pb-0 absolute w-full h-full group-hover:scale-110 transition-all duration-300"
             src="https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fexclusive%2Fwomen.png&w=640&q=75"
           />
         </div>

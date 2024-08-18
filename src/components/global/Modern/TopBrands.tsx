@@ -1,3 +1,4 @@
+import BrandCard from "@/components/cards/BrandCard";
 import React from "react";
 
 interface TopBrandsProps {}
@@ -10,23 +11,7 @@ const TopBrands: React.FC<TopBrandsProps> = ({}) => {
       </p>
       <div className="grid grid-cols-4 gap-6">
         {[1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-          <div
-            key={index}
-            className="w-full group h-ful flex relative items-center justify-center overflow-hidden rounded-lg"
-          >
-            <img
-              className="group-hover:scale-125 group-hover:rotate-12 transition-all duration-300"
-              src="https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F269%2Fh%2526m.png&w=1080&q=75"
-            />
-            <div className="absolute w-full h-full group-hover:bg-black/60 transition-all duration-300">
-                </div>
-            <img
-              className="absolute"
-              src="https://chawkbazarlaravel.s3.ap-southeast-1.amazonaws.com/271/logo16.png"
-              alt=""
-            />
-
-          </div>
+          <BrandCard key={index} />
         ))}
       </div>
     </div>
