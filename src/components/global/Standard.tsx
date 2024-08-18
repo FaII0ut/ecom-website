@@ -4,6 +4,7 @@ import ProductCard from "../cards/ProductCard";
 import StaticItem from "../cards/StaticItem";
 import Categories from "./Modern/Categories";
 import SmallSlide from "./SliderItems/SmallSlide";
+import Collection from "./Collection";
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
@@ -168,6 +169,8 @@ const Standard: React.FC = () => {
           <SmallSlide img={img} containerClasses="rounded-full" />
         )}
       />
+
+      <Collection />
     </>
   );
 };
