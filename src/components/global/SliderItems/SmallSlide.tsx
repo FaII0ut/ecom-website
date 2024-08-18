@@ -1,0 +1,18 @@
+import React from "react";
+
+interface SmallSlideProps {
+  img: any;
+  containerClasses?: string;
+}
+
+const SmallSlide: React.FC<SmallSlideProps> = ({img, containerClasses}) => {
+  return (
+    <div className={`w-full h-52 p-3  overflow-hidden`}>
+      <img
+        className={`w-full h-full object-cover rounded-md ${containerClasses}`}
+        src={img.imageUrl}
+      />
+    </div>
+  );
+};
+export default SmallSlide;

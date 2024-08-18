@@ -23,7 +23,7 @@ const Exclusive: React.FC<ExclusiveProps> = ({}) => {
             EXCLUSIVE
           </p>
           <p className="absolute left-6 text-slate-300/50 font-bold text-[170px] leading-[12rem]">
-            20
+            24
           </p>
           <img
             className="p-12 pb-0 absolute w-full h-full group-hover:scale-110 transition-all duration-300"

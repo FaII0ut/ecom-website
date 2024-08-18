@@ -1,7 +1,10 @@
 import React from "react";
 import Carousel from "../Slider";
+import SmallSlide from "../SliderItems/SmallSlide";
 
-interface CategoriesProps {}
+interface CategoriesProps {
+  sliderItem?: any;
+}
 const items = [
   {
     imageUrl:
@@ -101,7 +104,9 @@ const items = [
   },
 ];
 
-const Categories: React.FC<CategoriesProps> = ({}) => {
+const Categories: React.FC<CategoriesProps> = ({
+  sliderItem = (img: any) => <SmallSlide img={img} />,
+}) => {
   return (
     <div className="mx-auto container my-6">
       <p className="text-heading text-lg mb-4 md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold">
@@ -116,11 +121,7 @@ const Categories: React.FC<CategoriesProps> = ({}) => {
           adaptiveHeight: true,
         }}
         divProps=" rounded-lg h-full"
-        renderItem={(img) => (
-          <div className="w-40 h-52 p-3">
-            <img className="w-full h-full object-cover rounded-md " src={img.imageUrl} />
-          </div>
-        )}
+        renderItem={sliderItem}
         css="px-2 overflow-hidden rounded-lg"
       />
     </div>
