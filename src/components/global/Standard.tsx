@@ -5,21 +5,15 @@ import StaticItem from "../cards/StaticItem";
 import Categories from "./Modern/Categories";
 import SmallSlide from "./SliderItems/SmallSlide";
 import Collection from "./Collection";
+import { standardSliderLItems, standardSliderMItems } from "@/data/products";
+import Arrivals from "./Modern/Arrivals";
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
+  "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-1.jpg&w=1920&q=100",
 ];
 
-const standardSliderLItems = [
-  {
-    imageUrl:
-      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
-  },
-  {
-    imageUrl:
-      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
-  },
-];
+
 
 const standardSliderSItems = [
   {
@@ -49,20 +43,8 @@ const standardSliderSItems = [
   },
 ];
 
-const standardSliderMItems = [
-  {
-    imageUrl:
-      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fsmall%2Fbanner-2.jpg&w=1920&q=100",
-  },
-  {
-    imageUrl:
-      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fsmall%2Fbanner-3.jpg&w=1920&q=100",
-  },
-  {
-    imageUrl:
-      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fsmall%2Fbanner-1.jpg&w=1920&q=100",
-  },
-];
+
+
 
 //standard page Slider Large
 const standardSliderL = {
@@ -101,45 +83,45 @@ const standardSliderM = {
   pauseOnHover: false,
 };
 
-const Standard: React.FC = () => {
-  const getElement = (item: any) => {
-    return (
-      <div className={`focus:outline-none px-5 mb-24`}>
-        <>
-          <div className="flex h-[20vh] rounded-md overflow-hidden">
-            <div className="w-1/3">
-              <img className="w-full h-full object-cover" src={item.imageUrl} />
-            </div>
-            <div className="w-2/3 bg-gray-100 flex flex-col justify-center  p-4">
-              <div className="text-xl font-bold">{item.name}</div>
-              <div className=" text-lg mt-2">
-                <span className="">{item.price}</span>
-                {item.salePrice && (
-                  <span className="line-through text-gray-500 ml-2">
-                    {item.salePrice}
-                  </span>
-                )}
-              </div>
+const getElement = (item: any) => {
+  return (
+    <div className={`focus:outline-none px-5 mb-24`}>
+      <>
+        <div className="flex h-[20vh] rounded-md overflow-hidden">
+          <div className="w-1/3">
+            <img className="w-full h-full object-cover" src={item.imageUrl} />
+          </div>
+          <div className="w-2/3 bg-gray-100 flex flex-col justify-center  p-4">
+            <div className="text-xl font-bold">{item.name}</div>
+            <div className=" text-lg mt-2">
+              <span className="">{item.price}</span>
+              {item.salePrice && (
+                <span className="line-through text-gray-500 ml-2">
+                  {item.salePrice}
+                </span>
+              )}
             </div>
           </div>
+        </div>
 
-          <div className="flex justify-between mt-20">
-            <span>Sold: {item.sold}</span>
-            <span>Available: {item.available}</span>
-          </div>
-        </>
-      </div>
-    );
-  };
+        <div className="flex justify-between mt-20">
+          <span>Sold: {item.sold}</span>
+          <span>Available: {item.available}</span>
+        </div>
+      </>
+    </div>
+  );
+};
+
+const Standard: React.FC = () => {
+
   return (
     <>
-      <div>
         <Slider
           items={standardSliderLItems}
           settings={standardSliderL}
           css="h-[82vh] mb-20 px-4"
         />
-      </div>
 
       <div className="flex h-[45vh] mb-7 mx-auto container space-x-6 ">
         <div className="w-2/3 bg-blue-500 rounded-md overflow-hidden">
@@ -164,13 +146,28 @@ const Standard: React.FC = () => {
           divProps="mx-0"
         />
       </div>
+
       <Categories
         sliderItem={(img: any) => (
           <SmallSlide img={img} containerClasses="rounded-full" />
         )}
       />
 
+      <Arrivals sectionTitle='Best Sellers' />
+
+      <StaticItem imageUrl={staticItem[1]} containerClass='h-[25vh] mx-auto container rounded-md overflow-hidden m-10' />
+
+      <Arrivals />
+
+      <Categories sliderItem={(img: any) => (
+          <SmallSlide img={img} containerClasses="" />
+        )}
+      />
+
       <Collection />
+
+
+
     </>
   );
 };

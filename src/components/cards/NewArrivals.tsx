@@ -3,10 +3,11 @@ import React from "react";
 interface NewArrivalsProps {
   title: string;
   price: string;
+  salePrice?: string;
   img: string;
 }
 
-const NewArrivals: React.FC<NewArrivalsProps> = ({title, price, img}) => {
+const NewArrivals: React.FC<NewArrivalsProps> = ({ title, price, img, salePrice }) => {
   return (
     <div className="h-[495px] rounded-lg overflow-hidden w-full group transition-all duration-300 border-0 hover:border border-gray-200 hover:shadow-lg hover:shadow-gray-200 hover:-translate-y-1">
       <div className="h-[80%]">
@@ -20,7 +21,12 @@ const NewArrivals: React.FC<NewArrivalsProps> = ({title, price, img}) => {
           {title}
         </p>
         <p className="text-heading font-semibold text-sm space-x-1 rtl:space-x-reverse sm:text-lg md:text-base 3xl:text-xl md:mt-2.5 2xl:mt-3">
-          {price}
+          <span className="">{price}</span>
+          {salePrice && (
+            <span className="line-through text-gray-500 ml-2">
+              {salePrice}
+            </span>
+          )}
         </p>
       </div>
     </div>

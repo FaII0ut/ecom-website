@@ -5,11 +5,11 @@ interface SmallSlideProps {
   containerClasses?: string;
 }
 
-const SmallSlide: React.FC<SmallSlideProps> = ({img, containerClasses}) => {
+const SmallSlide: React.FC<SmallSlideProps> = ({img, containerClasses='rounded-md'}) => {
   return (
     <div className={`w-full h-52 p-3  overflow-hidden`}>
       <img
-        className={`w-full h-full object-cover rounded-md ${containerClasses}`}
+        className={`w-full h-full object-cover ${containerClasses}`}
         src={img.imageUrl}
       />
     </div>
