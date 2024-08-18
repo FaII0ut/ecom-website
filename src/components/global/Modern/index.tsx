@@ -11,6 +11,8 @@ import TopBrands from "./TopBrands";
 import SellingProducts from "./SellingProducts";
 import Exclusive from "./Exclusive";
 import Arrivals from "./Arrivals";
+import DownloadApp from "./DownloadApp";
+import ContactUs from "./ContactUs";
 
 interface ModernProps {}
 
@@ -28,6 +30,8 @@ const Modern: React.FC<ModernProps> = ({}) => {
       <SellingProducts />
       <Exclusive />
       <Arrivals />
+      <DownloadApp />
+      <ContactUs />
     </div>
   );
 };
