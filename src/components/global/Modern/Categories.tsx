@@ -118,7 +118,7 @@ const Categories: React.FC<CategoriesProps> = ({}) => {
         divProps=" rounded-lg h-full"
         renderItem={(img) => (
           <div className="w-40 h-52 p-3">
-            <img className="w-full h-full object-cover rounded-md " src={img} />
+            <img className="w-full h-full object-cover rounded-md " src={img.imageUrl} />
           </div>
         )}
         css="px-2 overflow-hidden rounded-lg"
