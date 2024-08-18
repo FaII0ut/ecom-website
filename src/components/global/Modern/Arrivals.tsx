@@ -1,4 +1,5 @@
 import NewArrivals from "@/components/cards/NewArrivals";
+import {products} from "@/data/products";
 import React from "react";
 
 interface ArrivalsProps {}
@@ -10,16 +11,14 @@ const Arrivals: React.FC<ArrivalsProps> = ({}) => {
         New Arrivals
       </p>
       <div className="grid grid-cols-5 gap-7">
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
-        <NewArrivals />
+        {products.map((item, index) => (
+          <NewArrivals
+            key={index}
+            title={item.name}
+            img={item.imageUrl}
+            price={item.price}
+          />
+        ))}
       </div>
     </div>
   );
