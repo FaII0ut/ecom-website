@@ -1,3 +1,4 @@
+import NewArrivals from "@/components/cards/NewArrivals";
 import React from "react";
 
 interface ArrivalsProps {}
@@ -9,7 +10,7 @@ const Arrivals: React.FC<ArrivalsProps> = ({}) => {
         New Arrivals
       </p>
       <div className="grid grid-cols-3 gap-7">
-        
+        <NewArrivals />
       </div>
     </div>
   );

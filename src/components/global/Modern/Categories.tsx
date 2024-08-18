@@ -39,11 +39,11 @@ const Categories: React.FC<CategoriesProps> = ({}) => {
         items={items}
         settings={{
           slidesToShow: 7,
-          className: "bg-yellow-300 h-full",
+          className: "h-full",
           centerPadding: "0px",
           adaptiveHeight: true,
         }}
-        divProps="bg-green-400 rounded-lg h-full"
+        divProps=" rounded-lg h-full"
         renderItem={(img) => (
           <div className="w-40 h-52 p-3">
             <img className="w-full h-full object-cover rounded-md " src={img} />
