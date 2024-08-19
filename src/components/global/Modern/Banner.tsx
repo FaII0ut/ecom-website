@@ -42,7 +42,7 @@ const Banner: React.FC<BannerProps> = ({}) => {
     <>
       <Carousel
         items={items}
-        divProps="h-[424px] overflow rounded-lg my-16"
+        divProps="overflow rounded-lg my-16"
         css="px-2 overflow-hidden rounded-lg"
       />
     </>
