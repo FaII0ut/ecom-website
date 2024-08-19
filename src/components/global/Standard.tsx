@@ -5,15 +5,12 @@ import StaticItem from "../cards/StaticItem";
 import Categories from "./Modern/Categories";
 import SmallSlide from "./SliderItems/SmallSlide";
 import Collection from "./Collection";
-import {standardSliderLItems, standardSliderMItems} from "@/data/products";
+import {products, standardSliderLItems, standardSliderMItems} from "@/data/products";
 import Arrivals from "./Modern/Arrivals";
 import AdBanner from "./AdBanner";
 import ContactUs from "./Modern/ContactUs";
 import DownloadApp from "./Modern/DownloadApp";
 import Services from "../services";
-import { SampleNextArrow } from "../arrow";
-import { SamplePrevArrow } from "../arrow";
-
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
@@ -83,8 +80,6 @@ const standardSliderM = {
   autoplay: true,
   autoplaySpeed: 5000,
   pauseOnHover: false,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
 };
 
 const getElement = (item: any) => {
@@ -166,12 +161,14 @@ const Standard: React.FC = () => {
       <Arrivals />
 
       <Categories
+        title="Brands"
+        items={products}
         sliderItem={(img: any) => <SmallSlide img={img} containerClasses="" />}
       />
 
       <Collection />
 
-      <Services/>
+      <Services />
 
       <DownloadApp />
       <ContactUs />

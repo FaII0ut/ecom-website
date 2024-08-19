@@ -28,7 +28,6 @@ const standardSliderMItems = [
   },
 ];
 
-
 const products = [
   {
     name: "Hopister Yellow",
@@ -140,108 +139,226 @@ const products = [
     sold: "0",
     available: "0",
   },
-
 ];
-
 
 const brands = [
   {
     brandName: "HM Trades",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F269%2Fh%2526m.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F269%2Fh%2526m.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F290%2Fblaze-fashion.png&w=1920&q=100",
   },
   {
     brandName: "Roseban",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F74%2Fray-ban.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F74%2Fray-ban.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F272%2Fclub-shoes.png&w=1920&q=100",
   },
   {
     brandName: "Vint Shoes",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F72%2Fconverse.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F72%2Fconverse.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F273%2Felegance.png&w=1920&q=100",
   },
   {
     brandName: "Vintage Design",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F70%2Femporio-armani.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F70%2Femporio-armani.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F274%2Ffashadil.png&w=1920&q=100",
   },
   {
     brandName: "T Fashion",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F68%2Funder-armour.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F68%2Funder-armour.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F275%2Ffusion.png&w=1920&q=100",
   },
   {
     brandName: "Hairstore Vintage",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F66%2Fgucci.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F66%2Fgucci.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F276%2Fhoppister.png&w=1920&q=100",
   },
   {
     brandName: "Fania Fashion",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F63%2Fzara.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F63%2Fzara.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F291%2Fhunter-shoes.png&w=1920&q=100",
   },
   {
     brandName: "Hipster",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F61%2FHollister.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F61%2FHollister.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F281%2Fshovia.png&w=1920&q=100",
   },
   {
     brandName: "Phoenix Bags",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F59%2Fherschel.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F59%2Fherschel.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F282%2FGroup-36179.png&w=1920&q=100",
   },
   {
     brandName: "AB Shoes",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F57%2Fnike.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F57%2Fnike.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F283%2FGroup-36180.png&w=1920&q=100",
   },
   {
     brandName: "Ceseare",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F55%2Ftissot.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F55%2Ftissot.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F289%2FGroup-36181.png&w=1920&q=100",
   },
   {
     brandName: "Klein Shoes",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F53%2FCalvin-klein.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F53%2FCalvin-klein.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F288%2FGroup-36182.png&w=1920&q=100",
   },
   {
     brandName: "Hoppister",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F47%2Flevi-s.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F47%2Flevi-s.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F287%2FGroup-36185.png&w=1920&q=100",
   },
   {
     brandName: "Masteroid",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F45%2Fdior.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F45%2Fdior.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F286%2FGroup-36186.png&w=1920&q=100",
   },
   {
     brandName: "Vintage",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F43%2Fpuma-logo.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F43%2Fpuma-logo.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F285%2FGroup-36183.png&w=1920&q=100",
   },
   {
     brandName: "Fusion",
-    bgUrl: "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F41%2Fadidas.png&w=640&q=75",
+    bgUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F41%2Fadidas.png&w=640&q=75",
     logoUrl:
       "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F284%2FGroup-36184.png&w=1920&q=100",
   },
-
 ];
 
-export {products, standardSliderLItems, standardSliderMItems, brands};
+const categories = [
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-3.jpg&w=1920&q=100",
+  },
+  {
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fhero%2Fbanner-2.jpg&w=1920&q=100",
+  },
+];
+
+export {
+  products,
+  standardSliderLItems,
+  standardSliderMItems,
+  brands,
+  categories,
+};

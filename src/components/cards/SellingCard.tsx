@@ -3,16 +3,12 @@ import React from "react";
 interface SellingCardProps {
   title: string;
   price: string;
-  sale: string;
-  range: [];
   img: string;
 }
 
 const SellingCard: React.FC<SellingCardProps> = ({
   title,
   price,
-  sale,
-  range,
   img,
 }) => {
   return (
