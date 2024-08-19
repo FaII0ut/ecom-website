@@ -1,4 +1,5 @@
 import ProductCard from "@/components/cards/ProductCard";
+import { products } from "@/data/products";
 import React from "react";
 
 interface FlashSaleProps {}
@@ -12,14 +13,14 @@ const FlashSale: React.FC<FlashSaleProps> = ({}) => {
         </p>
 
         <div className="grid grid-cols-5 gap-7">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
+          {products.map((item, index) => (
             <ProductCard
               key={index}
-              title="Zara army bag"
-              price="200"
+              title={item.name}
+              price={item.price}
               sale=""
               range={[]}
-              img="https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F292%2F10.png&w=750&q=100"
+              img={item.imageUrl}
             />
           ))}
         </div>

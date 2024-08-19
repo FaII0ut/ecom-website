@@ -5,15 +5,16 @@ import StaticItem from "../cards/StaticItem";
 import Categories from "./Modern/Categories";
 import SmallSlide from "./SliderItems/SmallSlide";
 import Collection from "./Collection";
-import { standardSliderLItems, standardSliderMItems } from "@/data/products";
+import {standardSliderLItems, standardSliderMItems} from "@/data/products";
 import Arrivals from "./Modern/Arrivals";
+import AdBanner from "./AdBanner";
+import ContactUs from "./Modern/ContactUs";
+import DownloadApp from "./Modern/DownloadApp";
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-1.jpg&w=1920&q=100",
 ];
-
-
 
 const standardSliderSItems = [
   {
@@ -42,9 +43,6 @@ const standardSliderSItems = [
     available: "2",
   },
 ];
-
-
-
 
 //standard page Slider Large
 const standardSliderL = {
@@ -114,14 +112,13 @@ const getElement = (item: any) => {
 };
 
 const Standard: React.FC = () => {
-
   return (
     <>
-        <Slider
-          items={standardSliderLItems}
-          settings={standardSliderL}
-          css="h-[82vh] mb-20 px-4"
-        />
+      <Slider
+        items={standardSliderLItems}
+        settings={standardSliderL}
+        css="h-[82vh] mb-20 px-4"
+      />
 
       <div className="flex h-[45vh] mb-7 mx-auto container space-x-6 ">
         <div className="w-2/3 bg-blue-500 rounded-md overflow-hidden">
@@ -153,21 +150,23 @@ const Standard: React.FC = () => {
         )}
       />
 
-      <Arrivals sectionTitle='Best Sellers' />
+      <Arrivals sectionTitle="Best Sellers" />
 
-      <StaticItem imageUrl={staticItem[1]} containerClass='h-[25vh] mx-auto container rounded-md overflow-hidden m-10' />
+      <StaticItem
+        imageUrl={staticItem[1]}
+        containerClass="h-[25vh] mx-auto container rounded-md overflow-hidden m-10"
+      />
 
       <Arrivals />
 
-      <Categories sliderItem={(img: any) => (
-          <SmallSlide img={img} containerClasses="" />
-        )}
+      <Categories
+        sliderItem={(img: any) => <SmallSlide img={img} containerClasses="" />}
       />
 
       <Collection />
 
-
-
+      <DownloadApp />
+      <ContactUs />
     </>
   );
 };

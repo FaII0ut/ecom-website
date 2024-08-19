@@ -1,4 +1,5 @@
 import SellingCard from "@/components/cards/SellingCard";
+import {products} from "@/data/products";
 import React from "react";
 
 interface SellingProductsProps {}
@@ -10,15 +11,14 @@ const SellingProducts: React.FC<SellingProductsProps> = ({}) => {
         On Selling Products
       </p>
       <div className="grid grid-cols-3 gap-7">
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
-        <SellingCard />
+        {products.map((item, index) => (
+          <SellingCard
+            key={index}
+            title={item.name}
+            price={item.price}
+            img={item.imageUrl}
+          />
+        ))}
       </div>
     </div>
   );

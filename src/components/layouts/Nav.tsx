@@ -1,13 +1,17 @@
 import React from "react";
 import CartIcon from "../icons/Cart";
 import SearchIcon from "../icons/Search";
+import Router from "next/router";
 
 interface NavProps {}
 
 const NavItem = ({item}: any) => {
   return (
     <>
-      <div className="relative group h-[96px] text-gray-700 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-normal before:rtl:right-0 before:ltr:left-0 xl:text-base text-heading xl:px-4 group-hover:text-black">
+      <div
+        onClick={() => Router.push("/standard")}
+        className="relative group h-[96px] text-gray-700 cursor-pointer inline-flex items-center px-3 py-2 text-sm font-normal before:rtl:right-0 before:ltr:left-0 xl:text-base text-heading xl:px-4 group-hover:text-black"
+      >
         {item.label}
         <div className="h-[3px] left-0 bottom-0 group-hover:w-full w-0  bg-black absolute transition-all duration-500"></div>
         <div className="hidden group-hover:fixed -z-[1] group-hover:z-10 opacity-0 left-[230px]  group-hover:opacity-100 group-hover:flex flex-row transition-all translate-y-4 group-hover:translate-y-0 duration-300 bg-white top-[96px] left-0">
@@ -17,7 +21,7 @@ const NavItem = ({item}: any) => {
                 {items.map((x: any, index: any) => (
                   <p
                     key={index}
-                    className="py-1.5 first:font-semibold text-sm  text-zinc-500 "
+                    className="py-1.5 first:font-semibold text-sm  text-zinc-500 capitalize"
                   >
                     {x}
                   </p>
@@ -124,7 +128,7 @@ const Nav: React.FC<NavProps> = ({}) => {
     },
     {id: "4", label: "Casual Wear", subItems: []},
     {id: "5", label: "Search", subItems: []},
-    {id: "6", label: "Shops", subItems: []},
+    {id: "6", label: "standard", subItems: []},
   ];
 
   return (

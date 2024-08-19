@@ -1,4 +1,5 @@
 import BrandCard from "@/components/cards/BrandCard";
+import {brands} from "@/data/products";
 import React from "react";
 
 interface TopBrandsProps {}
@@ -10,8 +11,8 @@ const TopBrands: React.FC<TopBrandsProps> = ({}) => {
         Top Brands
       </p>
       <div className="grid grid-cols-4 gap-6">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-          <BrandCard key={index} />
+        {brands.map((item, index) => (
+          <BrandCard key={index} {...item} />
         ))}
       </div>
     </div>
