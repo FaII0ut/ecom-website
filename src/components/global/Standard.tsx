@@ -10,6 +10,7 @@ import Arrivals from "./Modern/Arrivals";
 import AdBanner from "./AdBanner";
 import ContactUs from "./Modern/ContactUs";
 import DownloadApp from "./Modern/DownloadApp";
+import Services from "../services";
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
@@ -164,6 +165,8 @@ const Standard: React.FC = () => {
       />
 
       <Collection />
+
+      <Services/>
 
       <DownloadApp />
       <ContactUs />
