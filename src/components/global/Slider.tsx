@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
+
+
 interface CarouselProps {
   items: {
     imageUrl: string;
@@ -32,6 +34,7 @@ const Carousel: React.FC<CarouselProps> = ({
     speed: 1000,
     // autoplay: true,
     autoplaySpeed: 3000,
+
     ...settings, //
   };
 

@@ -11,6 +11,9 @@ import AdBanner from "./AdBanner";
 import ContactUs from "./Modern/ContactUs";
 import DownloadApp from "./Modern/DownloadApp";
 import Services from "../services";
+import { SampleNextArrow } from "../arrow";
+import { SamplePrevArrow } from "../arrow";
+
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
@@ -80,6 +83,8 @@ const standardSliderM = {
   autoplay: true,
   autoplaySpeed: 5000,
   pauseOnHover: false,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
 };
 
 const getElement = (item: any) => {
@@ -141,7 +146,7 @@ const Standard: React.FC = () => {
           items={standardSliderMItems}
           settings={standardSliderM}
           css="pr-6 mb-24"
-          divProps="mx-0"
+          divProps="mx-0 overflow-visible"
         />
       </div>
 
