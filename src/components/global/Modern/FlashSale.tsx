@@ -1,5 +1,5 @@
 import ProductCard from "@/components/cards/ProductCard";
-import { products } from "@/data/products";
+import { products } from "@/data/StoreData";
 import React from "react";
 
 interface FlashSaleProps {}

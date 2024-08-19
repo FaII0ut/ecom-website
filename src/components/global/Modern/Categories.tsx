@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "../Slider";
 import SmallSlide from "../SliderItems/SmallSlide";
-import {categories} from "@/data/products";
+import {categories} from "@/data/StoreData";
 
 interface CategoriesProps {
   sliderItem?: any;

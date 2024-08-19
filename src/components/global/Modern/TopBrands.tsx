@@ -1,5 +1,5 @@
 import BrandCard from "@/components/cards/BrandCard";
-import {brands} from "@/data/products";
+import {brands} from "@/data/StoreData";
 import React from "react";
 
 interface TopBrandsProps {}

@@ -1,5 +1,5 @@
 import SellingCard from "@/components/cards/SellingCard";
-import {products} from "@/data/products";
+import {products} from "@/data/StoreData";
 import React from "react";
 
 interface SellingProductsProps {}
