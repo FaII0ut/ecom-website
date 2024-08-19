@@ -355,10 +355,173 @@ const categories = [
   },
 ];
 
-export {
-  products,
-  standardSliderLItems,
-  standardSliderMItems,
-  brands,
-  categories,
-};
+
+const productFilters = [
+  {
+    id: "1",
+    group_name: "Category",
+    items: [
+      {
+        id: "1.1",
+        name: "Bags",
+      },
+      {
+        id: "1.2",
+        name: "Kids",
+      },
+      {
+        id: "1.3",
+        name: "Men",
+      },
+      {
+        id: "1.4",
+        name: "Sneakers",
+      },
+      {
+        id: "1.5",
+        name: "Sports",
+      },
+      {
+        id: "1.6",
+        name: "Sunglass",
+      },
+      {
+        id: "1.7",
+        name: "Watch",
+      },
+      {
+        id: "1.8",
+        name: "Women",
+      },
+    ]
+  },
+
+  {
+    id: "2",
+    group_name: "Brands",
+    items: [
+      {
+        id: "2.1",
+        name: "Fusion",
+      },
+      {
+        id: "2.2",
+        name: "Vintage",
+      },
+      {
+        id: "2.3",
+        name: "Masteroid",
+      },
+      {
+        id: "2.4",
+        name: "Hoppister",
+      },
+      {
+        id: "2.5",
+        name: "Klein Shoes",
+      },
+    ]
+  },
+  
+  {
+    id: "3",
+    group_name: "Price",
+    items: [
+      {
+        id: "3.1",
+        name: "Under $50",
+      },
+      {
+        id: "3.2",
+        name: "$50 to $100",
+      },
+      {
+        id: "3.3",
+        name: "$100 to $150",
+      },
+      {
+        id: "3.4",
+        name: "$150 to $200",
+      },
+      {
+        id: "3.5",
+        name: "$200 to $300",
+      },
+      {
+        id: "3.6",
+        name: "$300 to $500",
+      },
+      {
+        id: "3.7",
+        name: "$500 to $1000",
+      },
+      {
+        id: "3.8",
+        name: "Over $1000",
+      },
+    ]
+  },
+
+  {
+    id: "4",
+    group_name: "Size",
+    items: [
+      {
+        id: "4.1",
+        name: "Small",
+      },
+      {
+        id: "4.2",
+        name: "Medium",
+      },
+      {
+        id: "4.3",
+        name: "Large",
+      },
+      {
+        id: "4.4",
+        name: "7",
+      },
+      {
+        id: "4.5",
+        name: "8",
+      },
+      {
+        id: "4.6",
+        name: "9",
+      },
+      {
+        id: "4.7",
+        name: "10",
+      },
+    ]
+  },
+  
+  {
+    id: "5",
+    group_name: "Color",
+    childElement: (item:any)=> 
+    <div className="flex flex-row items-center space-x-2"><div style={{width:20, height:20, background:item.hex}} className="flex rounded-full"/><p>{item.name}</p></div>,
+    items: [
+      {
+        id: "5.1",
+        name: "Red",
+        hex: "#FF0000",
+      },
+      {
+        id: "5.2",
+        name: "Blue",
+        hex: "#0000FF",
+      },
+      {
+        id: "5.3",
+        name: "Yellow",
+        hex: "#FFFF00",
+      },
+    ]
+  },
+
+
+]
+
+export {products, standardSliderLItems, standardSliderMItems, brands, categories, productFilters};

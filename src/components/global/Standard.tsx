@@ -5,7 +5,7 @@ import StaticItem from "../cards/StaticItem";
 import Categories from "./Modern/Categories";
 import SmallSlide from "./SliderItems/SmallSlide";
 import Collection from "./Collection";
-import {products, standardSliderLItems, standardSliderMItems} from "@/data/products";
+import {standardSliderLItems, standardSliderMItems, products} from "@/data/StoreData";
 import Arrivals from "./Modern/Arrivals";
 import AdBanner from "./AdBanner";
 import ContactUs from "./Modern/ContactUs";

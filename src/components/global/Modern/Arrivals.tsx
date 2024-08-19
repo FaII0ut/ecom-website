@@ -1,5 +1,5 @@
 import NewArrivals from "@/components/cards/NewArrivals";
-import {products} from "@/data/products";
+import {products} from "@/data/StoreData";
 import React from "react";
 
 interface ArrivalsProps {
