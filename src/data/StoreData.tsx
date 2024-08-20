@@ -141,6 +141,41 @@ const products = [
   },
 ];
 
+
+const featuredProducts = [
+  {
+    name: "Nike Comfy Vapor Maxpro",
+    price: "$220.00 - $250.00",
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F321%2FFootwear-1.png&w=1920&q=75",
+  },
+  {
+    name: "Addidas FuelCell Propel V2 Running Shoes",
+    price: "$45.00 - $50.00",
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F323%2FFootwear.png&w=1920&q=75",
+  },
+  {
+    name: "Tuma Grey",
+    price: "$400.00 - $1,000.00",
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F294%2F30-%25281%2529.png&w=1920&q=75",
+  },
+  {
+    name: "Pissot Super Dry",
+    price: "$250.00",
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F322%2Fwatch.png&w=1920&q=75",
+  },
+  {
+    name: "Zara Army Bag",
+    price: "$260.00",
+    imageUrl:
+      "https://chawkbazar.redq.io/_next/image?url=https%3A%2F%2Fchawkbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F292%2F10.png&w=1920&q=75",
+  },
+  
+];
+
 const brands = [
   {
     brandName: "HM Trades",
@@ -524,4 +559,4 @@ const productFilters = [
 
 ]
 
-export {products, standardSliderLItems, standardSliderMItems, brands, categories, productFilters};
+export {products, standardSliderLItems, standardSliderMItems, brands, categories, productFilters, featuredProducts};

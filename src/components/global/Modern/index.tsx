@@ -13,6 +13,7 @@ import Exclusive from "./Exclusive";
 import Arrivals from "./Arrivals";
 import DownloadApp from "./DownloadApp";
 import ContactUs from "./ContactUs";
+import { featuredProducts } from "@/data/StoreData";
 
 interface ModernProps {}
 
@@ -23,7 +24,7 @@ const Modern: React.FC<ModernProps> = ({}) => {
       <FlashSale />
       <Banner />
       <Categories />
-      <Featured />
+      <Featured items={featuredProducts}/>
       <AdBanner img="https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-3.jpg&w=2048&q=100" />
       <TopBrands />
       <AdBanner img="https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-4.jpg&w=2048&q=100" />
