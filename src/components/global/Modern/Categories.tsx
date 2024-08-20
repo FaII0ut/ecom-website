@@ -7,6 +7,7 @@ interface CategoriesProps {
   sliderItem?: any;
   title?: string;
   items?: any;
+  brandName?: string;
 }
 
 const Categories: React.FC<CategoriesProps> = ({
@@ -22,11 +23,13 @@ const Categories: React.FC<CategoriesProps> = ({
       <Carousel
         items={items}
         showArrow
+        hoverEffect
         settings={{
           slidesToShow: 7,
           className: "h-full",
           centerPadding: "0px",
           adaptiveHeight: true,
+          speed: 300,
           responsive: [
             {
               breakpoint: 1024,

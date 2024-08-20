@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 
 interface CarouselProps {
@@ -13,6 +13,7 @@ interface CarouselProps {
   css?: string;
   divProps?: string;
   showArrow?: boolean;
+  hoverEffect?: boolean;
   renderItem?: (item: any) => JSX.Element;
   settings?: any;
 }
@@ -24,6 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
   settings,
   renderItem,
   showArrow = false,
+  hoverEffect = false,
 }) => {
   let sliderRef: any = useRef();
 
@@ -60,6 +62,7 @@ const Carousel: React.FC<CarouselProps> = ({
                   alt={`Slide ${index}`}
                 />
               </div>
+
             );
           })}
         </Slider>
@@ -68,8 +71,8 @@ const Carousel: React.FC<CarouselProps> = ({
         <>
           {" "}
           <div
-            onClick={() => sliderRef.slickPrev()}
-            className="absolute w-10 h-10 top-[42%] -right-4 rounded-full bg-white shadow-md border border-gray-100 flex items-center justify-center"
+            onClick={() => sliderRef.slickNext()}
+            className="absolute w-10 h-10 top-[42%] -right-4 rounded-full bg-white shadow-md border border-gray-100 flex items-center justify-center hover:invert duration-300"
           >
             <svg
               stroke="currentColor"
@@ -84,8 +87,8 @@ const Carousel: React.FC<CarouselProps> = ({
             </svg>
           </div>
           <div
-            onClick={() => sliderRef.slickNext()}
-            className="absolute w-10 h-10 top-[42%] -left-4 rounded-full bg-white shadow-md border border-gray-100 flex items-center justify-center"
+            onClick={() => sliderRef.slickPrev()}
+            className="absolute w-10 h-10 top-[42%] -left-4 rounded-full bg-white shadow-md border border-gray-100 flex items-center justify-center hover:invert duration-300"
           >
             <svg
               className="rotate-180"

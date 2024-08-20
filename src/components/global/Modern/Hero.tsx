@@ -5,7 +5,7 @@ interface HeroProps {}
 const Hero: React.FC<HeroProps> = ({}) => {
   return (
     <div className="flex flex-row gap-x-4">
-      <div className="grid grid-cols-9 gap-3 h-[40vw] w-full mx-2.5">
+      <div className="grid grid-cols-9 gap-3 h-[85vh] w-full mx-2.5">
         <div className="col-span-5 h-full relative bg-red-500 w-full group overflow-hidden">
           <img
             className="w-full h-full absolute group-hover:z-40 delay-1000"

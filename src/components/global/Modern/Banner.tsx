@@ -23,6 +23,7 @@ const Banner: React.FC<BannerProps> = ({}) => {
   return (
     <>
       <Carousel
+      
         items={items}
         divProps=" overflow rounded-lg my-16"
         css="px-2 overflow-hidden rounded-lg"

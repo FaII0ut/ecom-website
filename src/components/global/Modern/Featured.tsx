@@ -13,7 +13,7 @@ const Featured: React.FC<FeaturedProps> = ({ items }) => {
   return (
     <div className="mx-auto container">
       <p className="text-heading text-lg md:text-xl lg:text-2xl 2xl:text-3xl xl:leading-10 font-bold my-6">
-        Flash Sale
+        Featured Products
       </p>
 
       <div className="grid grid-cols-4 h-[716px] w-full gap-7">

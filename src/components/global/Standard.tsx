@@ -11,6 +11,7 @@ import AdBanner from "./AdBanner";
 import ContactUs from "./Modern/ContactUs";
 import DownloadApp from "./Modern/DownloadApp";
 import Services from "../services";
+import { topBrandsSmall } from "@/data/StoreData";
 
 const staticItem = [
   "https://chawkbazar.redq.io/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-2.jpg&w=1920&q=100",
@@ -161,8 +162,8 @@ const Standard: React.FC = () => {
       <Arrivals />
 
       <Categories
-        title="Brands"
-        items={products}
+        title="Top Brands"
+        items={topBrandsSmall}
         sliderItem={(img: any) => <SmallSlide img={img} containerClasses="" />}
       />
 
